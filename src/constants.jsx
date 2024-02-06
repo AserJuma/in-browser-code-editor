@@ -8,11 +8,11 @@ export const LANGUAGE_VERSIONS = {
     };
 
 export const SNIPPETS = {
-    javascript: ``,
-    typescript: ``,
-    python: ``,
-    java: ``,
+    javascript: `javascript`,
+    typescript: `typescript`,
+    python: `python`,
+    java: `java`,
     csharp:
-        '',
-    php: "",
+        'csharp',
+    php: "php",
 };

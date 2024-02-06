@@ -16,7 +16,7 @@ const CodeEditor = () => {
         editor.focus();
     };
 
-    const onSelect = (language) => {
+    const onLangSelect = (language) => {
         setLanguage(language);
         setValue(SNIPPETS[language]);
     };
@@ -25,7 +25,7 @@ const CodeEditor = () => {
         <Box>
             <HStack spacing={4}>
                 <Box w="50%">
-                    <LangSelector language={language} onSelect={onSelect} />
+                    <LangSelector language={language} onSelect={onLangSelect} />
                     <Editor
                         height="75vh"
                         theme="vs-dark"
