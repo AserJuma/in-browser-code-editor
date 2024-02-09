@@ -25,7 +25,7 @@ const LangSelector = ({language, onSelect}) => {
                             {lang}
                             &nbsp;
                                 <Text as="span" color="white.600" fontSize="sm">
-                                    {version}
+                                    ({version})
                                 </Text>
                         </MenuItem>
                     ))}

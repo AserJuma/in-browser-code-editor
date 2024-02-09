@@ -4,6 +4,7 @@ import { Editor } from "@monaco-editor/react";
 
 import { SNIPPETS } from "../constants";
 import LangSelector from "./LangSelector.jsx";
+import Output from "./Output.jsx";
 
 
 const CodeEditor = () => {
@@ -22,7 +23,7 @@ const CodeEditor = () => {
     };
 
     return (
-        <Box>
+        <Box w="100%">
             <HStack spacing={4}>
                 <Box w="50%">
                     <LangSelector language={language} onSelect={onLangSelect} />
@@ -36,6 +37,7 @@ const CodeEditor = () => {
                         onChange={(value) => setValue(value)}
                     />
                 </Box>
+                <Output editorRef={editorRef} language={language} />
             </HStack>
 
         </Box>
