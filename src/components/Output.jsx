@@ -1,5 +1,5 @@
 import {Box, Button, Text, useToast} from "@chakra-ui/react"
-import {execute} from "../api.js";
+import {execute/*, checkRuntimes8*/} from "../api.js";
 import {useState} from "react";
 
 
@@ -9,6 +9,8 @@ const Output = ({editorRef, language}) => {
     const [isLoading, setIsLoading] = useState(false)
     const [isError, setIsError] = useState(false)
     const toast = useToast();
+
+    //checkRuntimes().then(r => console.log(r));
 
     const runButton = async () => {
         // eslint-disable-next-line react/prop-types
@@ -43,7 +45,7 @@ const Output = ({editorRef, language}) => {
           </Button>
           <Box height='75vh' p={2} border='1px solid' color={isError ? "red.400" : ""} borderRadius={4} borderColor={isError ? "red.500" : "#333"}>
               {
-                  output ? output.map((line, i) => <Text key={i}>{line}</Text>) : 'Click to run the code Dins'
+                  output ? output.map((line, i) => <Text key={i}>{line}</Text>) : 'Click to run the code!'
               }
           </Box>
       </Box>

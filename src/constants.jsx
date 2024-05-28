@@ -1,4 +1,5 @@
 export const LANGUAGE_VERSIONS = {
+    //c: "10.2.0",
     javascript: "18.15.0",
     typescript: "5.0.3",
     python: "3.10.0",
@@ -7,6 +8,7 @@ export const LANGUAGE_VERSIONS = {
     };
 
 export const SNIPPETS = {
+    //c: ``,
     javascript: `function greet(name) {\n console.log("Hello, " + name + "!");\n}\ngreet("Dania");\n`,
     typescript: `type Params = {\n\tname: string;\n}\n\nfunction greet(data: Params) {\n\tconsole.log("Hello, " + data.name + "!");\n}\n\ngreet({ name: "Dania" });\n`,
     python: `def greet(name):\n\tprint("Hello, " + name + "!")\n\ngreet("Dania")\n`,

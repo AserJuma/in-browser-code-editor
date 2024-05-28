@@ -7,8 +7,8 @@ function App() {
 
   return (
       <Box minH="100vh" bg="brand.900">
-          <Box ml={3} bg="brand.900" color="white">
-              <Heading>Hello Dania!</Heading>
+          <Box bg="brand.900" color="white">
+              <Heading>In-Browser Code Editor</Heading>
           </Box>
           <Box color="white" px={6} py={8}>
               <Center >
